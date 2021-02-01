@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/67d97e7797.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="logo">
+                <h1>Notebook</h1>
+            </div>
+            <div class="toolbox">
+                <div id="brush" class="element tool">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <div id="eraser" class="element tool">
+                    <i class="fas fa-eraser"></i>
+                </div>
+                <div class="element">
+                    <input id="brashSize" type="number" min="0" max="50" value="10">
+                </div>
+                <div class="element">
+                    <input id="mainColor" type="color" value="#000">
+                </div>
+
+            </div>
+        </nav>
+        <canvas id="mainCanvas">
+
+        </canvas>
+    </main>
+
+    <script src="/js/canvas.js"></script>
+</body>
+
+</html>

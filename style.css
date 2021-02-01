@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'janda-everyday';
+    src: url('./fonts/JandaEverydayCasual-vGLy.ttf') format('truetype');
+}
+
+button,
+input,
+optgroup,
+select,
+textarea,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"],
+button[disabled],
+html input[disabled],
+button::-moz-focus-inner,
+input::-moz-focus-inner,
+input[type="checkbox"],
+input[type="radio"],
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="search"],
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+:root {
+    --MainColor: #16697F;
+    --BackgroundColor: #F9F8F8;
+    --color2: #7BBEC9;
+    --color3: #96CFE0;
+    --color4: #7DA6AF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--BackgroundColor);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    min-height: 3rem;
+    height: 8vh;
+    background-color: var(--MainColor);
+    color: var(--BackgroundColor);
+}
+
+nav .logo {
+    font-family: 'janda-everyday', Courier, monospace;
+    font-size: 1.5rem;
+    margin: auto 1rem;
+}
+
+nav .toolbox {
+    display: flex;
+    align-items: center;
+    margin: auto 1rem;
+}
+
+nav .element {
+    display: flex;
+    overflow: hidden;
+    height: 3rem;
+    width: 3rem;
+}
+
+nav input[type="color"] {
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    margin: auto;
+}
+
+nav input[type="number"] {
+    height: 2rem;
+    width: 2.3rem;
+    margin: auto;
+}
+
+nav .fas {
+    margin: auto;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+canvas {
+    display: block;
+    box-sizing: border-box;
+    color: white;
+}
